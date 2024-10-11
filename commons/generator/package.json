@@ -1,0 +1,22 @@
+{
+  "name": "@softbean/generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "gen": "cross-env NODE_OPTIONS=\"--import tsx\" plop --plopfile=plopfile.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "plop": "^4.0.1"
+  }
+}

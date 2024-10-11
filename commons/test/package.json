@@ -1,0 +1,19 @@
+{
+  "name": "@softbean/commons-test",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "devDependencies": {
+    "@softbean/commons-lint": "*",
+    "@types/jest": "^29.5.13",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "scripts": {
+    "lint": "eslint \"./**/*.{jsx,tsx,js,ts}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

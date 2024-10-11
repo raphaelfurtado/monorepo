@@ -1,0 +1,26 @@
+{
+  "name": "company-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"./**/*.{jsx,tsx,js,ts}\"",
+    "start": "ts-node ./index.ts",
+    "dev": "nodemon ./index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@softbean/commons-http-client": "*"
+  },
+  "devDependencies": {
+    "@softbean/commons-test": "*",
+    "@softbean/commons-lint": "*",
+    "@types/node": "^22.7.4",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
