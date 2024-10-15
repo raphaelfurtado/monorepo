@@ -12,5 +12,8 @@ jobs:
     steps:
         # [Common CI/CD step]
         - uses: actions/checkout@v3
+        # ===================
+        - name: "Install Dependences"
+          run: "npm install"
         - name: "Lint"
           run: "npm run lint"
