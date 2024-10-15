@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+# Variáveis  reutilizáveis do projeto
+env: 
+  NODE_VERSION: 20.18.0    
+
 # Quais tarefas queremos executar?
 jobs: 
   #tarefa
@@ -12,6 +16,11 @@ jobs:
     steps:
         # [Common CI/CD step]
         - uses: actions/checkout@v3
+        - uses: actions/setup-node@v4
+          with:
+            node-version: ${{ env.NODE_VERSION }}
+            cache: "npm"
+            cache-dependency-path: ./package-lock.json
         # ===================
         - name: "Install Dependences"
           run: "npm install"
@@ -22,6 +31,11 @@ jobs:
     steps:   
         # [Common CI/CD step]
         - uses: actions/checkout@v3
+        - uses: actions/setup-node@v4
+          with:
+            node-version: ${{ env.NODE_VERSION }}
+            cache: "npm"
+            cache-dependency-path: ./package-lock.json
         # ===================
         - name: "Install Dependences"
           run: "npm install"
