@@ -23,7 +23,7 @@ jobs:
             cache-dependency-path: ./package-lock.json
         # ===================
         - name: "Install Dependences"
-          run: "npm install"
+          run: "npm ci"
         - name: "Lint"
           run: "npm run lint"
   test:
@@ -38,6 +38,6 @@ jobs:
             cache-dependency-path: ./package-lock.json
         # ===================
         - name: "Install Dependences"
-          run: "npm install"
+          run: "npm ci"
         - name: "Test"
           run: "npm run test"        
