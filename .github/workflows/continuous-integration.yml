@@ -10,5 +10,7 @@ jobs:
   lint: 
     runs-on: ubuntu-latest
     steps:
+        # [Common CI/CD step]
+        - uses: actions/checkout@v3
         - name: "Lint"
           run: "npm run lint"
